@@ -4,7 +4,10 @@
 
 # defining variables
 
-print "Please enter below the age of the baby (in months)"
+print "Please choose from the drop-down menu the age of the baby"
+# For inputing the age, I'd like to have a drop down menu with months or an option to enter the birthdate of the baby 
+# and have the months calculated for the script to run
+
 month = raw_input("> ")
 # here I want to add in a drop-down menue to choose the months 1...12
 # also want to have the person enter the birth month and year and have the age calculated, not entered
@@ -17,13 +20,13 @@ if sex != "he" or "she":
 else:
 	print "The baby is a %r, and %r is %r months old" % (sex, sex, month)
 	
-
+# As soon as the age is set, the following part of the script should start running
 
 if month == "0":
 	print """Your friends have just become parents. There's so much to ask about the newborn! For example: 
-	\n1. Did the birth go smoothly?
+	\n1. Are you home with the baby already? I hope they didn't keep you too long at the hospital...
 	\n2. Was everything okay with the baby? How soon did they let you home from the hospital?
-	\n3. How big was %d at birth?
+	\n3. How big was %d at birth? How tall? How much did %d weigh?
 	\n4. What colour are the baby's eyes?
 	\n5. Is %d crying a lot or is %d sleeping well?
 	\n6. Are you getting enough sleep? How do you feel? (to ask from the newborn' parents""" % (sex, sex, sex) 
